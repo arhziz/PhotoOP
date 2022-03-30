@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PhotoOP.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid ColumnDefinitions="120,*">
+        <Frame Padding="5">
+            <Button
+                x:Name="TakePhoto"
+                Grid.Column="0"
+                Clicked="TakePhoto_Clicked"
+                Text="Take Photo"
+                VerticalOptions="Start" />
+        </Frame>
+
+        <Frame Grid.Column="1" Padding="10">
+            <Image x:Name="photo" />
+        </Frame>
+
+
+    </Grid>
+
+</ContentPage>
